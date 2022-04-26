@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97589887582BFE07E13A675D /* Pods_ExButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4940CBF18C2B37E72FE1441F /* Pods_ExButton.framework */; };
 		C6A9F95C281674A200339732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A9F95B281674A200339732 /* AppDelegate.swift */; };
 		C6A9F95E281674A200339732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A9F95D281674A200339732 /* SceneDelegate.swift */; };
 		C6A9F960281674A200339732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A9F95F281674A200339732 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20842C9D4721AF546370B4F4 /* Pods-ExButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExButton.debug.xcconfig"; path = "Target Support Files/Pods-ExButton/Pods-ExButton.debug.xcconfig"; sourceTree = "<group>"; };
+		267F78C7A0D4D101B02DB37D /* Pods-ExButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExButton.release.xcconfig"; path = "Target Support Files/Pods-ExButton/Pods-ExButton.release.xcconfig"; sourceTree = "<group>"; };
+		4940CBF18C2B37E72FE1441F /* Pods_ExButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A9F958281674A200339732 /* ExButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A9F95B281674A200339732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A9F95D281674A200339732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97589887582BFE07E13A675D /* Pods_ExButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942A165B9396E1A738F955EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20842C9D4721AF546370B4F4 /* Pods-ExButton.debug.xcconfig */,
+				267F78C7A0D4D101B02DB37D /* Pods-ExButton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F0BAC304F1C49FC27D9D658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4940CBF18C2B37E72FE1441F /* Pods_ExButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6A9F94F281674A200339732 = {
 			isa = PBXGroup;
 			children = (
 				C6A9F95A281674A200339732 /* ExButton */,
 				C6A9F959281674A200339732 /* Products */,
+				942A165B9396E1A738F955EC /* Pods */,
+				9F0BAC304F1C49FC27D9D658 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6A9F96C281674A300339732 /* Build configuration list for PBXNativeTarget "ExButton" */;
 			buildPhases = (
+				702D7A20F33AFC3C5F6AEB6E /* [CP] Check Pods Manifest.lock */,
 				C6A9F954281674A200339732 /* Sources */,
 				C6A9F955281674A200339732 /* Frameworks */,
 				C6A9F956281674A200339732 /* Resources */,
+				30DB521C3D3B26B49302F9E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30DB521C3D3B26B49302F9E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExButton/Pods-ExButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExButton/Pods-ExButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExButton/Pods-ExButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		702D7A20F33AFC3C5F6AEB6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6A9F954281674A200339732 /* Sources */ = {
@@ -216,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +351,7 @@
 		};
 		C6A9F96D281674A300339732 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20842C9D4721AF546370B4F4 /* Pods-ExButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +381,7 @@
 		};
 		C6A9F96E281674A300339732 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267F78C7A0D4D101B02DB37D /* Pods-ExButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,6 @@
+framework module Pods_ExButton {
+  umbrella header "Pods-ExButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
